@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moje První Stránka</title>
+    <style>
+        /* Základní stylování, aby to trochu vypadalo */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f2f5;
+        }
+        .container {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 400px;
+        }
+        h1 { color: #1a73e8; }
+        button {
+            background-color: #1a73e8;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s;
+        }
+        button:hover { background-color: #1557b0; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Ahoj světe! 👋</h1>
+        <p>Tohle je tvůj nový HTML soubor. Můžeš ho začít upravovat podle sebe.</p>
+        <button id="pozdravBtn">Klikni na mě!</button>
+        <p id="zprava" style="margin-top: 15px; font-weight: bold; color: #34a853;"></p>
+    </div>
+
+    <script>
+        // Malá ukázka toho, co dokáže JavaScript
+        const tlacitko = document.getElementById('pozdravBtn');
+        const text = document.getElementById('zprava');
+
+        tlacitko.addEventListener('click', () => {
+            text.textContent = 'Funguje to! Gratuluji ke tvé první stránce. 🎉';
+        });
+    </script>
+</body>
+</html>
